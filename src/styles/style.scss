@@ -1176,7 +1176,10 @@ img.svg {
     }
 }
 
-.arlo_tm_skills_wrap {
+
+
+.arlo_tm_skills_wrap,
+.arlo_tm_skills_wrap-extra {
     width             : 100%;
     height            : auto;
     clear             : both;
@@ -1185,8 +1188,9 @@ img.svg {
     -moz-box-sizing   : border-box;
     box-sizing        : border-box;
     background-color  : $background-color_5;
-    padding           : 90px 0px;
-    margin-bottom     : 100px;
+    padding-top       : 90px;
+
+
 
     .inner_wrap {
         width             : 100%;
@@ -1220,6 +1224,11 @@ img.svg {
         -moz-box-sizing   : border-box;
         box-sizing        : border-box;
     }
+}
+
+.arlo_tm_skills_wrap-extra {
+    padding-bottom: 90px;
+    margin-bottom : 100px;
 }
 
 .progress_bar_wrap_total {
@@ -1386,6 +1395,7 @@ img.svg {
     h4 {
         line-height  : 1;
         margin-bottom: 18px;
+        color        : #E3872D;
     }
 }
 

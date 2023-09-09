@@ -15,8 +15,8 @@ const Portfolio = () => {
             </div>
 
             {/* <!-- PRELOADER --> */}
-            {/* <!-- /PRELOADER --> */}
             <Preloader />
+            {/* <!-- /PRELOADER --> */}
             {/* <!-- MOBILE MENU --> */}
             <MobileMenu />
             {/* <!-- /MOBILE MENU --> */}
