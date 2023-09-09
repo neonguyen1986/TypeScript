@@ -1,10 +1,11 @@
+import mobileLogo from '@/assets/img/logo/mobile_logo.png'
 const MobileMenu = () => {
     return (
         <>
             <div className="arlo_tm_mobile_header_wrap">
                 <div className="main_wrap">
                     <div className="logo">
-                        <a href="index.html"><img src="img/logo/mobile_logo.png" alt="mobile_logo" /></a>
+                        <a href="index.html"><img src={mobileLogo} alt="mobile_logo" /></a>
                     </div>
                     <div className="arlo_tm_trigger">
                         <div className="hamburger hamburger--collapse-r">

@@ -1,5 +1,6 @@
 import { TypeAnimation } from 'react-type-animation';
 import avatar from '@/assets/img/hero/neo1.jpg'
+import ScrollToContent from '@/utils/ScrollToContent';
 
 const HomeCV = () => {
     return (
@@ -41,7 +42,8 @@ const HomeCV = () => {
                             </div>
                         </div>
                         <div className="arlo_tm_arrow_wrap bounce anchor">
-                            <a href="#about"><i className="xcon-angle-double-down"></i></a>
+                            <a href="#a" onClick={(e) => ScrollToContent('#about', e)}
+                            ><i className="xcon-angle-double-down"></i></a>
                         </div>
                     </div>
                 </div>

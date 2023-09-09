@@ -462,6 +462,14 @@ img.svg {
                             width: 35px;
                         }
                     }
+
+                    &.active {
+                        color: #e3882d81;
+
+                        // &:before {
+                        //     width: 35px;
+                        // }
+                    }
                 }
             }
         }
@@ -784,7 +792,7 @@ img.svg {
     }
 
     .overlay_image.hero {
-        background-image: url(../img/hero/2.jpg);
+        background-image: url(@/assets/img/hero/2.jpg);
     }
 
     .overlay_color.hero {
@@ -796,7 +804,7 @@ img.svg {
     }
 
     .overlay_image.testimonial {
-        background-image: url(../img/hero/3.jpg);
+        background-image: url(@/assets/img/hero/3.jpg);
     }
 
     .overlay_color.testimonial {
@@ -1409,7 +1417,10 @@ img.svg {
     h4 {
         line-height  : 1;
         margin-bottom: 18px;
-        color        : #E3872D;
+    }
+
+    &.skills {
+        color: #E3872D;
     }
 }
 
@@ -2538,7 +2549,7 @@ img.svg {
 .arlo_tm_universal_box_wrap.particle {
     height             : 100vh;
     position           : relative;
-    background-image   : url(../img/hero/2.jpg);
+    background-image   : url(@/assets/img/hero/2.jpg);
     background-repeat  : no-repeat;
     background-size    : cover;
     background-position: center;
@@ -2559,7 +2570,7 @@ img.svg {
     background-repeat  : no-repeat;
     background-position: center;
     background-size    : cover;
-    background-image   : url(../img/hero/2.jpg);
+    background-image   : url(@/assets/img/hero/2.jpg);
     position           : relative;
 
     .overlay {
@@ -2618,7 +2629,7 @@ img.svg {
         }
 
         .overlay_image.top {
-            background-image: url(../img/hero/2.jpg);
+            background-image: url(@/assets/img/hero/2.jpg);
         }
 
         .overlay_color.top {
@@ -3512,6 +3523,7 @@ img.svg {
         span {
             padding-left: 0px;
         }
+
     }
 
     .arlo_tm_counter_list {

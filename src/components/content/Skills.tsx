@@ -5,11 +5,18 @@ const Skills = () => {
     return (
         <>
             <div className="arlo_tm_section" id='skills'>
+
                 <div className="arlo_tm_skills_wrap">
+                    <div className="arlo_tm_title_holder">
+                        <div >
+                            <h3>Skills</h3>
+                            <span>My Skills</span>
+                        </div>
+                    </div>
                     <div className="container">
                         <div className="inner_wrap">
                             <div className="leftbox">
-                                <div className="arlo_tm_mini_title_holder">
+                                <div className="arlo_tm_mini_title_holder skills">
                                     <h4><strong>Frontend Abilities</strong></h4>
                                 </div>
                                 <ul>
@@ -53,7 +60,7 @@ const Skills = () => {
                     <div className="container">
                         <div className="inner_wrap">
                             <div className="leftbox">
-                                <div className="arlo_tm_mini_title_holder">
+                                <div className="arlo_tm_mini_title_holder skills">
                                     <h4><strong>Backend Abilities</strong></h4>
                                 </div>
                                 <ul>
