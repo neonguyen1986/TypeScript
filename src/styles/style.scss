@@ -231,6 +231,13 @@ svg {
     height: 15px;
 }
 
+.icon {
+    svg {
+        width : unset;
+        height: unset;
+    }
+}
+
 img.svg {
     width : 15px;
     height: 15px;
@@ -266,6 +273,13 @@ img.svg {
     box-sizing        : border-box;
     position          : relative;
     z-index           : 2;
+
+
+    .custom-float-button {
+        border-radius   : 50%;
+        background-color: #E3872D;
+        color           : #E3872D;
+    }
 }
 
 #ripple {
@@ -1460,6 +1474,7 @@ img.svg {
                     -webkit-box-sizing: border-box;
                     -moz-box-sizing   : border-box;
                     box-sizing        : border-box;
+                    min-height        : 400px;
 
                     &:hover {
                         top: -5px;
