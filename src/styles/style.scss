@@ -462,14 +462,6 @@ img.svg {
                             width: 35px;
                         }
                     }
-
-                    &.active {
-                        color: #e3882d81;
-
-                        // &:before {
-                        //     width: 35px;
-                        // }
-                    }
                 }
             }
         }
@@ -3263,6 +3255,10 @@ img.svg {
                     font-family    : $font-family_2;
                     font-weight    : 600;
                     font-size      : 19px;
+
+                    &.active {
+                        color: $color_3;
+                    }
                 }
             }
         }
@@ -3350,7 +3346,8 @@ img.svg {
         }
     }
 
-    .arlo_tm_skills_wrap {
+    .arlo_tm_skills_wrap,
+    .arlo_tm_skills_wrap-extra {
         .inner_wrap {
             flex-direction: column;
         }

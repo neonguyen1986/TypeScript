@@ -2,6 +2,8 @@ import { Button, Modal } from 'antd';
 import React, { useState } from 'react';
 import { IoLogInSharp } from 'react-icons/io5'
 import { GiHealthNormal } from 'react-icons/gi'
+import { CgFileDocument } from 'react-icons/cg'
+
 import ReactMarkdown from 'react-markdown';
 
 interface IProject {
@@ -81,17 +83,22 @@ Built with 2 main pages: Homepage and admin page
                 github: 'cde',
             }
         },
-        // {
-        //     image: "img/svg/camera-diaphragm.svg",
-        //     title: 'title 1',
-        //     description: 'this is the description of this project',
-        //     detail: {
-        //         description: '',
-        //         technology: '',
-        //         demo: '',
-        //         github: '',
-        //     }
-        // },
+        {
+            image: <CgFileDocument size={50} color={'#E3872D'} />,
+            title: 'Profile project',
+            shortDescription: 'Make a CV project. This project will convert code from HTML to React',
+            detail: {
+                description: `
+* Decompose existing HTML components into React components
+* Handles all animations from jQuery to React libraries
+* Add a backend so users can send emails to my private mailbox.
+* Complete the Mobile interface so it can be displayed without using jQuery.
+                `,
+                technology: 'React Hook, Node Express, Ant Design, some animation library: parallax, progressBar...',
+                link: 'abc',
+                github: 'cde',
+            }
+        },
     ]
     return (
         <>
