@@ -1,7 +1,47 @@
-import { TypeAnimation } from 'react-type-animation';
-import avatar from '@/assets/img/hero/neo1.jpg'
+import { useState } from 'react'
+import axios from '@/utils/axios'
+import { toast } from 'react-toastify';
+
+interface IApiResponse {
+    message: string;
+    errCode: number;
+    // Add other properties if necessary
+}
 
 const Contact = () => {
+    const isEmailValid = (email: string) => {
+        const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+        // Use the test method to check if the email matches the regex
+        return emailRegex.test(email);
+    }
+
+    const [name, setName] = useState<string>('')
+    const [email, setEmail] = useState<string>('')
+    const [message, setMessage] = useState<string>('')
+
+    const handleClickSendEmail = async () => {
+        try {
+            if (name !== '' && message !== '' && isEmailValid(email)) {
+                let dataEmail: object = {
+                    name: name,
+                    senderEmail: email,
+                    body: message,
+                }
+                let res = await axios.post('/api/send-email', dataEmail);
+                console.log('--------check res after:', res)
+                if (res) {
+                    toast.success('Thank you for your interest in my CV. I will reply as soon as possible.')
+                } else {
+                    toast.warning('Something wrong with server!')
+                }
+            } else {
+                toast.warning('Please check Name, Email, Message again!')
+            }
+        } catch (error) {
+            console.log(error)
+        }
+    }
+
     return (
         <>
             <div className="arlo_tm_section" id="contact">
@@ -33,16 +73,32 @@ const Contact = () => {
                                             <div className="returnmessage" data-success="Your message has been received, We will contact you soon."></div>
                                             <div className="empty_notice"><span>Please Fill Required Fields</span></div>
                                             <div className="wrap">
-                                                <input id="name" type="text" placeholder="Your Name" />
+                                                <input id="name"
+                                                    type="text"
+                                                    placeholder="Your Name"
+                                                    value={name}
+                                                    onChange={(e) => setName(e.target.value)} />
                                             </div>
                                             <div className="wrap">
-                                                <input id="email" type="text" placeholder="Your Email" />
+                                                <input id="email"
+                                                    type="text"
+                                                    value={email}
+                                                    placeholder="Your Email"
+                                                    onChange={(e) => setEmail(e.target.value)} />
                                             </div>
                                             <div className="wrap">
-                                                <textarea id="message" placeholder="Your Message"></textarea>
+                                                <textarea id="message"
+                                                    placeholder="Your Message"
+                                                    value={message}
+                                                    onChange={(e) => setMessage(e.target.value)}>
+                                                </textarea>
                                             </div>
                                             <div className="arlo_tm_button">
-                                                <a id="send_message" href="#"><span>Send Message</span></a>
+                                                <a id="send_message" onClick={handleClickSendEmail}>
+                                                    <span>
+                                                        Send Message
+                                                    </span>
+                                                </a>
                                             </div>
                                         </form>
                                     </div>
