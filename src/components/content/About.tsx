@@ -70,9 +70,6 @@ const About = () => {
                                     <div className="about_short_contact_wrap">
                                         <ul>
                                             <li>
-                                                <span><label>Birthday:</label> 05.25.1986</span>
-                                            </li>
-                                            <li>
                                                 <span><label>Age:</label> 37</span>
                                             </li>
                                             <li>
@@ -88,13 +85,10 @@ const About = () => {
                                                 <span><label>Degree:</label> Bachelor - Diploma</span>
                                             </li>
                                             <li>
-                                                <span><label>Website:</label> <a href="#">www.mywebsite.com</a></span>
+                                                <span><label>Website:</label> <a href="#">neonguyen.online</a></span>
                                             </li>
                                             <li>
-                                                <span><label>Mail:</label> <a href="mailto:example@gmail.com">neonguyen.ca&#64;gmail.com</a></span>
-                                            </li>
-                                            <li>
-                                                <span><label>Phone:</label> <a href="#">+999 999 9999</a></span>
+                                                <span><label>Email:</label> <a href="mailto:example@gmail.com">neonguyen.ca&#64;gmail.com</a></span>
                                             </li>
                                             <li>
                                                 <span><label>Facebook:</label> <a href="https://www.facebook.com/profile.php?id=100010807712082" target='_blank'>&#64;neo_facebook</a></span>

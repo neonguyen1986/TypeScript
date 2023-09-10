@@ -94,7 +94,7 @@ Built with 2 main pages: Homepage and admin page
 * Add a backend so users can send emails to my private mailbox.
 * Complete the Mobile interface so it can be displayed without using jQuery.
                 `,
-                technology: 'React Hook, Node Express, Ant Design, some animation library: parallax, progressBar...',
+                technology: 'React Hook - TypeScript, Node Express, Ant Design, some animation library: parallax, progressBar...',
                 link: 'abc',
                 github: 'cde',
             }
